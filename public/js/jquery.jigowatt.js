@@ -11,15 +11,15 @@ jQuery(document).ready(function(){
 			.attr('disabled','disabled');
 
 		$.post(action, {
-			name: $('#name').val(),
-			email: $('#email').val(),
-			phone: $('#phone').val(),
-			subject: $('#subject').val(),
-			comments: $('#comments').val(),
-			verify: $('#verify').val()
+			email: $('#email').val()
 		},
 			function(data){
-				document.getElementById('message').innerHTML = data;
+
+				if(data.formstatus === 0){
+					$("#contactform").slideUp();
+				}
+
+				document.getElementById('message').innerHTML = data.message;
 				$('#message').slideDown('slow');
 				$('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
 				$('#submit').removeAttr('disabled');

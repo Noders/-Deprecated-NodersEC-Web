@@ -95,20 +95,6 @@ $(document).ready(function() {
         itemsMobile: false
 	});
 
-	// Testemonial carousel
-	// $(".testemonials").owlCarousel({
-	// 	autoPlay: 8000,
-	// 	autoHeight : true,
-	// 	singleItem: true,
-	// 	navigation: false,
-	// 	itemsDesktop: [1000, 1],
-  //       itemsDesktopSmall: [900, 1],
-  //       itemsTablet: [600, 1],
-  //       itemsMobile: false
-	// });
-
-	// Initiat fitVids.js
-	$(".video-item").fitVids();
 
 	// Bootstrap Tab navigation
 	$('.tabs a').click(function (e) {

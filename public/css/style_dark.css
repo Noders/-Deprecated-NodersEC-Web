@@ -870,3 +870,7 @@ ul.extra-features i{
   margin: 1em;
   border: solid 4px rgb(62, 154, 18);
 }
+
+.red{
+  color: red !important;
+}

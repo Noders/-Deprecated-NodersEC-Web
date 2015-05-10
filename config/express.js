@@ -1,4 +1,4 @@
-var express 	     = require('express'),
+var express 	       = require('express'),
 	  path    	       = require('path'),
 	  favicon 	       = require('serve-favicon'),
 	  cookieParser     = require('cookie-parser'),
@@ -6,10 +6,11 @@ var express 	     = require('express'),
 	  consolidate      = require('consolidate'),
 	  swig             = require('swig');
 
+
 module.exports = function(){
 
-  var app = express();
 
+  var app = express();
   app.set('view engine','html');
   app.set('views', __dirname + '/../app/views');
   app.engine('.html',consolidate.swig);

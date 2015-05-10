@@ -6,8 +6,24 @@ app.config(function($interpolateProvider){
 
 app.controller('TwittsController', ['$scope','$http', '$q', function($scope,$http,$q) {
 
-    function getTwitts(){
 
+    function refreshCarrousel(){
+      setTimeout(function(){
+        $(".testemonials").owlCarousel({
+          autoPlay: 8000,
+          autoHeight : true,
+          singleItem: true,
+          navigation: false,
+          itemsDesktop: [1000, 1],
+              itemsDesktopSmall: [900, 1],
+              itemsTablet: [600, 1],
+              itemsMobile: false
+        });
+        $("#reviews").removeClass('hide');
+      },1000);
+    }
+
+    function getTwitts(){
       var d = $q.defer();
 
       $http.get('/twitts').
@@ -21,26 +37,10 @@ app.controller('TwittsController', ['$scope','$http', '$q', function($scope,$htt
        return d.promise;
     }
 
-
     getTwitts()
     .then(function(data){
         $scope.twitts = data;
-
-        setTimeout(function(){
-          $(".testemonials").owlCarousel({
-            autoPlay: 8000,
-            autoHeight : true,
-            singleItem: true,
-            navigation: false,
-            itemsDesktop: [1000, 1],
-                itemsDesktopSmall: [900, 1],
-                itemsTablet: [600, 1],
-                itemsMobile: false
-          });
-          $("#reviews").removeClass('hide');
-        },1000);
-
+        refreshCarrousel();
     });
-
 
 }]);
