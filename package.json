@@ -21,7 +21,8 @@
     "path": "^0.11.14",
     "serve-favicon": "^2.2.0",
     "swig": "^1.4.2",
-    "validator": "^3.39.0"
+    "validator": "^3.39.0",
+    "serve-favicon": "^2.2.0" 
   },
   "devDependencies": {
     "gulp": "^3.8.11",
