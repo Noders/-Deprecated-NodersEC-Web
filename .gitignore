@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-node_modules
-test.txt
-npm-debug.log
-=======
+
 # Logs
 logs
 *.log
+
+test.txt
 
 # Runtime data
 pids
@@ -30,4 +28,3 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
->>>>>>> 83612615dc22a6a45535263903af93ff942d00cd
