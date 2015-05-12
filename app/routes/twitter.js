@@ -2,7 +2,8 @@ var Twitter = require('twitter'),
     express = require('express'),
     router  = express.Router(),
     Q       = require('q'),
-    apicache = require('apicache').options({ debug: true }).middleware;
+    apicache = require('apicache').options({ debug: false }).middleware;
+
 
 var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
@@ -10,6 +11,7 @@ var client = new Twitter({
     access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
     access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 });
+
 
 function favorites(){
   var d = Q.defer();
@@ -22,6 +24,7 @@ function favorites(){
   });
   return d.promise;
 }
+
 
 router.get('/twitts' , apicache('1 hour'),function(req,res){
   favorites()
