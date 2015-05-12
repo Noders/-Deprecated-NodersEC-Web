@@ -20,10 +20,8 @@ function favorites(){
         d.resolve(tweets);
       }
   });
-
   return d.promise;
 }
-
 
 router.get('/twitts' , apicache('1 hour'),function(req,res){
   favorites()
@@ -35,7 +33,5 @@ router.get('/twitts' , apicache('1 hour'),function(req,res){
   })
   .done();
 });
-
-
 
 module.exports = router;
