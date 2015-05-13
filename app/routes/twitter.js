@@ -15,7 +15,7 @@ var client = new Twitter({
 
 function favorites(){
   var d = Q.defer();
-  client.get('favorites/list',{ count : 5},function(error, tweets, response){
+  client.get('favorites/list',{ count : 6},function(error, tweets, response){
       if (error){
         d.reject(error);
       }else{
