@@ -4,14 +4,41 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Noders Ecuador, cursos gratuitos, workshops, y charlas. ¿Por qué? Porque nos gusta.">
-		<meta name="author" content="Ramón Chancay">
+		<meta name="author" content="Noders Ecuador">
 		<link rel="shortcut icon" href="images/favico.ico">
 		<title>Noders Ecuador - Cursos gratuitos, Workshops y charlas</title>
 
+		<!-- ogtags facebook -->
+		<meta property="og:description" content="Cursos gratuitos, workshops y charlas.¿Por qué? Porque nos gusta.">
+		<meta property="og:title" content="Noders Ecuador">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://www.noders.ec">
+		<meta property="og:image" content="https://res.cloudinary.com/dgn41tpy1/image/upload/v1431371641/noders_qkmlp7.png">
+		<meta property="og:site_name" content="noders.ec">
+		<!-- end ogtags -->
+		<!-- twitter cards -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@NodersEc">
+		<meta name="twitter:creator" content="@NodersEc">
+		<meta name="twitter:title" content="Noders Ecuador">
+		<meta name="twitter:description" content="Cursos gratuitos, workshops y charlas.¿Por qué? Porque nos gusta.">
+		<meta name="twitter:image" content="https://res.cloudinary.com/dgn41tpy1/image/upload/v1431371641/noders_qkmlp7.png">
+		<!-- end twittercard -->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 		<link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-		<link rel="stylesheet" href="css/main.min.css">
+		<!-- build:css css/main.min.css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/nivo-theme.css">
+		<link rel="stylesheet" href="css/nivo-lightbox.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/style_dark.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/color.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<!-- endbuild -->
 
 	</head>
 	<body>
@@ -31,7 +58,9 @@
 					<li class="current"><a href="#intro">Home</a></li>
 					<li><a href="#features">Cursos</a></li>
 					<li><a href="#services">Partners</a></li>
-					<li><a href="#download">Inscribete</a></li>
+					<li><a href="#download">Inscríbete</a></li>
+					<li> <a href="https://www.facebook.com/nodersEc" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+					<li> <a href="https://twitter.com/NodersEC" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -46,12 +75,12 @@
 
 						<img id="logobrandprincipal" src="images/branding.png" class="col-md-12 col-sm-12 animated fadeInUp" alt="logo">
 					</div>
-					<h1 class="animated fadeInUp">Cursos gratuitos, workshops, y charlas.</h1>
+					<h1 class="animated fadeInUp">Cursos gratuitos, workshops y charlas.</h1>
 					<h2 class="animated fadeInUp hidden-sm">¿Por qué? Porque nos gusta.</h2>
 					<ul class="list-inline">
 						<li>
 							<a href="#" class="btn btn-custom  animated fadeInUp">
-								<i class="fa fa-rocket"></i> Inscribete
+								<i class="fa fa-rocket"></i> Inscríbete
 							</a>
 						</li>
 					</ul>
@@ -67,7 +96,7 @@
 			<div class="col-md-12">
 				<div class="section-head wow fadeIn animated" data-wow-offset="120" data-wow-duration="1.5s">
 					<h1>Cursos</h1>
-					<p>El contenido que compartiremos</p>
+					<p>El contenido que compartiremos.</p>
 					<span class="underline"></span>
 				</div>
 			</div>
@@ -145,7 +174,7 @@
 			<div class="col-md-12">
 				<div class="section-head wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
 					<h1>Testimonios</h1>
-					<p>Opinones de nuestros colegas y amigos de la comunidad</p>
+					<p>Opiniones de nuestros colegas y amigos de la comunidad</p>
 					<span class="underline"></span>
 				</div>
 			</div>
@@ -160,7 +189,7 @@
 						</div>
 						<div class="client-name">
 							<h4>[[ twitt.user.name]]</h4>
-							<p><a target="_blank" href="https://twitter.com/[[twitt.user.screen_name]]">@[[twitt.user.screen_name]]</a></p>
+							<p><a class="green" target="_blank" href="https://twitter.com/[[twitt.user.screen_name]]">@[[twitt.user.screen_name]]</a></p>
 							<p>[[twitt.user.location]]</p>
 						</div>
 					</div>
@@ -182,35 +211,47 @@
 			<div class="col-md-12">
 				<div class="section-head wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
 					<h1>Nuestros partners</h1>
-					<p>Compañías, partners, y amigos</p>
+					<p>Compañías, partners y amigos</p>
 					<span class="underline"></span>
 				</div>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-md-4 col-sm-6">
+			<div class="col-md-3 col-sm-6">
 				<div class="service wow fadeIn animated" data-wow-offset="10">
 					<img class="parner-logo" src="http://pbs.twimg.com/profile_images/581274471002218497/8oJLYum5.png" alt="noders">
 					<h4>Noders Chile</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+					<p>En <a class="green" href="http://noders.cl/" target="_blank">NodersCL</a> mantenemos una comunidad  entorno a NodeJS y su ecositema.
+Con HeadQuarters en Santiago de Chile, creamos cursos, realizamos talleres, hackatones y workshops a fin de dar a conocer NodeJS y sus capacidades.</p>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-md-3 col-sm-6">
 				<div class="service wow fadeIn animated delay" data-wow-offset="10">
-					<img class="parner-logo" src="https://pbs.twimg.com/profile_images/554671988132691969/2LEOhDKe.png" alt="noders">
+					<img class="parner-logo" src="https://pbs.twimg.com/profile_images/554671988132691969/2LEOhDKe.png" alt="Crypto Party">
 					<h4>CryptoParty</h4>
 					<p>
-						Infórmate sobre el uso de herramientas de seguridad, anonimato y privacidad en el <a href="https://twitter.com/hashtag/CryptoParty">#CryptoParty.</a> PGP
+					 <a class="green" href="http://cryptoparty.ec/" target="_blank">Cryptoparty</a>	Ecuador es un evento sin fines de lucro que busca divulgar temas de privacidad y anonimato en Internet , somos personas como tu ciudadanos de Internet que nos interesamos por mantener libre nuestra red.
 					</p>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-6">
+			<div class="col-md-3 col-sm-6">
+				<div class="service wow fadeIn animated delay" data-wow-offset="10">
+					<img class="parner-logo" src="/images/area51.jpg" alt="Area 51">
+					<h4>Area 51</h4>
+					<p>
+					 <a class="green" href="http://area51.ec/" target="_blank">Area 51</a>
+						Cursos, charlas, talleres de seguridad web, Linux Básico , Linux Avanzado, Fundamentos de Redes y más.
+						En sus instalaciones se realizarán los talleres y cursos de noders.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
 				<div class="service wow fadeIn animated delay-long" data-wow-offset="10">
-					<img class="parner-logo" src="http://noders.cl/lib/img/StrongLoop_logo_square.png" alt="noders">
+					<img class="parner-logo" src="http://noders.cl/lib/img/StrongLoop_logo_square.png" alt="StrongLoop">
 					<h4>StrongLoop</h4>
 					<p>
-						StrongLoop es uno de los mayores contribuyentes al proyecto Node.js. Su plataforma permite crear visualmente APIs REST en node, y conectarlas a tu DATA de manera fácil y rápida
+					<a class="green" href="https://strongloop.com/" target="_blank">StrongLoop</a>	es uno de los mayores contribuyentes al proyecto Node.js. Su plataforma permite crear visualmente APIs REST en node, y conectarlas a tu DATA de manera fácil y rápida
 					</p>
 				</div>
 			</div>
@@ -225,7 +266,7 @@
 			<div class="col-md-12">
 				<div class="section-head wow fadeInDown animated" data-wow-offset="10">
 					<h1>Noticias</h1>
-					<p>Subscribete para entrarte de nuestros eventos y novedades </p>
+					<p>Suscríbete para entrarte de nuestros eventos y novedades </p>
 					<span class="underline"></span>
 				</div>
 			</div>
@@ -244,7 +285,7 @@
 
 						<button type="submit" class="submit btn btn-send" id="submit" value="Submit">
 							<i class="fa fa-envelope"></i>
-							Subscribe
+							Suscríbete
 						</button>
 
 					</fieldset>
@@ -260,17 +301,77 @@
 		</div>
 	</div>
 </section>
-
+<section class="customers wow fadeIn animated">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="customer-slider">
+					<div class="item">
+						<img class="item-carouseljs" src="images/nodejs-thumb.png" alt="NodeJs">
+					</div>
+					<div class="item">
+						<img class="item-carouseljs" src="images/angularjs.png" alt="Angular JS">
+					</div>
+					<div class="item">
+						<img class="item-carouseljs" src="images/mongodb.png" alt="Mongo db">
+					</div>
+					<div class="item">
+							<img class="item-carouseljs" src="images/strongloop.png" alt="Strongloop">
+					</div>
+					<div class="item">
+							<img class="item-carouseljs" src="images/npm-logo.svg" alt="Npm">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <section class="download" id="download">
 	<div class="container">
 
 		<div class="row">
 			<div class="col-md-12">
 				<div class="section-head wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-					<h1>Inscribete</h1>
-					<p>Forma parte de nuestros cursos</p>
-					<span class="underline"></span>
-					<h1>¡Muy pronto estaran listas las inscripciones!</h1>
+					<div class="col-md-12">
+						<div class="course-item col-md-6">
+								<div class="row">
+									<h1 class="course-title">NodeJs</h1>
+									<span class="underline"></span>
+								</div>
+								<div class="row course-text">
+									<p class="col-md-12">
+										Curso de Node.js, usando el framework Express para la creación de páginas y aplicaciones web.
+										Pasando por require, NPM, Mongoose,lógica de aplicacion, hasta la creación de un prototipo de aplicación.
+									</p>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<a href="#" id="NodeCourse" class="btn btn-custom  animated fadeInUp">
+											<i class="fa fa-clock-o "></i> Muy pronto
+										</a>
+									</div>
+								</div>
+						</div>
+						<div class="course-item col-md-6">
+								<div class="row">
+									<h1 class="course-title">AngularJs</h1>
+									<span class="underline"></span>
+								</div>
+								<div class="row course-text">
+									<p class="col-md-12">
+										Curso de Angular.js desarrollaremos aplicaciones web con arquitectura SPA, data-binding , directives, services y "factorias".
+										probaremos con el APIs de de terceros.
+									</p>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<a href="#" id="AngularCourse" class="btn btn-custom  animated fadeInUp">
+											<i class="fa fa-clock-o"></i> Muy pronto
+										</a>
+									</div>
+								</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -286,7 +387,30 @@
 
 	</div>
 </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62882210-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-<script src="js/main.min.js"></script>
+<!-- build:js js/main.min.js -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.jigowatt.js"></script>
+<script src="js/main.js"></script>
+<script src="app/app.js"></script>
+<!-- endbuild -->
 </body>
 </html>

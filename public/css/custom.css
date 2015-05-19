@@ -1,0 +1,25 @@
+.item-carouseljs{
+  width:150px;
+  min-height: 45px;
+}
+.course-title{
+  text-align: center;
+}
+
+.course-figure{
+  overflow:hidden;
+}
+
+.course-text{
+  padding:2em;
+  min-height: 200px;
+}
+
+.course-item{
+  padding:1em;
+}
+
+
+.green{
+  color: #3e9a12;
+}
