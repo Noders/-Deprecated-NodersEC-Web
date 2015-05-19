@@ -1,0 +1,19 @@
+{
+  "name": "Noders",
+  "version": "0.0.1",
+  "authors": [
+    "Ramon Chancay <ramon.chancay@gmail.com>"
+  ],
+  "description": "Sitio web de Noders Ecuador",
+  "main": "server.js",
+  "keywords": [
+    "Mean",
+    "Mongo",
+    "ExpressJs",
+    "AngularJS",
+    "NodeJS",
+    "loopback"
+  ],
+  "license": "MIT",
+  "homepage": "http://noders.ec"
+}
