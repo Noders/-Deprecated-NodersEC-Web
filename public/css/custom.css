@@ -23,3 +23,9 @@
 .green{
   color: #3e9a12;
 }
+
+#map{
+  padding: 0 !important;
+}
+
+.angular-google-map-container { height: 400px; }

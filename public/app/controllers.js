@@ -39,3 +39,14 @@ angular.module('app')
     });
 
 }])
+
+.controller('MapController', ['$scope','$http', '$q', function($scope,$http,$q) {
+  $scope.map = { center: { latitude: -2.169624, longitude: -79.910259 }, zoom: 18 };
+  $scope.marker = {
+     id: 0,
+     coords: {
+       latitude: -2.169624,
+       longitude: -79.910259
+     }
+  };
+}])

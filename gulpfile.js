@@ -6,13 +6,18 @@ var gulp     = require('gulp'),
 	uncss      = require('gulp-uncss'),
 	inject     = require('gulp-inject');
 
-
 gulp.task('inject',function(){
 	var target = gulp.src('./app/views/index.html');
-	var sources = gulp.src(['./public/css/**/*.js', './public/css/lib/**/*.css'], {read: false});
-	return target.pipe(inject(sources))
+	var sources = gulp.src(['./public/css/lib/**/*.min.js','./public/css/lib/**/*.min.css'], {read: false});
+	return target.pipe(inject(sources,{ignorePath : 'public/' , addRootSlash : false}))
     .pipe(gulp.dest('./app/views'));
-})
+});
+
+gulp.task('watch', function() {
+	gulp.watch(['./bower.json'], ['inject']);
+});
+
+gulp.task('default', ['wiredep', 'watch']);
 
 gulp.task('compress',function() {
 	var assets = useref.assets(),
@@ -25,6 +30,5 @@ gulp.task('compress',function() {
 		.pipe(useref())
 		.pipe(gulp.dest('./build/'));
 });
-
 
 gulp.task('build',['compress']);
